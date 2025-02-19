@@ -4,9 +4,9 @@ jobs:
   run-shell-command:
     runs-on: ubuntu:latest
     steps:
-    - name: echo a sting
-      run: echo "hello world"
-    - name: Multipleline commands
-      run: |
-       node -v
-       npn -v
+      - name: echo a sting
+        run: echo "hello world"
+      - name: Multipleline commands
+        run: |
+         node -v
+         npn -v
