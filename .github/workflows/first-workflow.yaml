@@ -10,3 +10,11 @@ jobs:
         run: |
          node -v
          npm -v
+  depends-on:
+    runs-on: windows-latest
+    needs: [run-shell-command]
+    steps:
+      - name: echo a sting
+        run: Write-Output "hello world from window"
+      - name: errorsteps
+        run: doesn't exixt
