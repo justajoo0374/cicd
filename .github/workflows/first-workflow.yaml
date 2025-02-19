@@ -17,4 +17,4 @@ jobs:
       - name: echo a sting
         run: Write-Output "hello world from window"
       - name: errorsteps
-        run: doesn't exixt
+        run: doesn'texixt
