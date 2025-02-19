@@ -6,7 +6,7 @@ jobs:
     steps:
     - name: echo a sting
       run: echo "hello world"
-    - name: Multipleline comments
+    - name: Multipleline commands
       run: |
        node -v
        npn -v
