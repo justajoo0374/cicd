@@ -1,19 +1,19 @@
 name: parallel-jobs
 on: [push]
 jobs:
-  first-job:
+  first-test:
     runs-on: ubuntu-latest
     steps: 
       - name: echo a string
         run:  echo "hello world"
-  second-job:
+  second-test:
       runs-on: macos-latest
       steps: 
         - name: view sw version
           run: sw_vers
-  third-job:
+  third-test:
       runs-on: windows-latest
-      needs: [first-job]
+      needs: [first-test]
       steps: 
         - name: depends-on
           run: Write-Output "windows heelo world"
