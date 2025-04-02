@@ -6,12 +6,12 @@ jobs:
     steps: 
       - name: echo a string
         run:  echo "hello world"
-    second-job:
+  second-job:
       runs-on: macos-latest
       steps: 
         - name: view sw version
           run: sw_vers
-    third-job:
+  third-job:
       runs-on: windows-latest
       needs: [first-job]
       steps: 
