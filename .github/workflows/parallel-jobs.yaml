@@ -18,4 +18,4 @@ jobs:
         - name: depends-on
           run: Write-Output "windows heelo world"
         - name: error step
-          run: doesnot exits
+          run: doesnotexits
